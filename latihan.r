@@ -6,7 +6,7 @@ library(ggplot2)
 library(ggpubr)
 
 # Baca data dari file CSV (jika datanya dalam Excel, bisa diekspor dulu ke CSV)
-data <- read.csv("Latihan Distribusi Data - Ivone.csv")  # Sesuaikan nama file jika berbeda
+data <- read.csv(file.choose())  # Sesuaikan nama file jika berbeda
 
 # Loop untuk setiap kolom
 for (col_name in colnames(data)) {
